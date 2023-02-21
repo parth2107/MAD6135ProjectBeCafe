@@ -1,0 +1,73 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  meta(http-equiv='X-UA-Compatible' content='ie=edge')
+  title BeCafé - Contact Page
+  link(href='https://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet')
+  link(href='css/all.min.css' rel='stylesheet')
+  link(href='css/templatemo-style.css' rel='stylesheet')
+
+.container
+  // Top box
+  // Logo & Site Name
+  .placeholder
+    .parallax-window(data-parallax='scroll' data-image-src='img/cafe-01.jpg')
+      .tm-header
+        .row.tm-header-inner
+          .col-md-6.col-12
+            img.tm-site-logo(src='img/logo.png' alt='Logo')
+            .tm-site-text-box
+              h1.tm-site-title BeCafé
+              h6.tm-site-description community + cafe
+          nav.col-md-6.col-12.tm-nav
+            ul.tm-nav-ul
+              li.tm-nav-li
+                a.tm-nav-link(href='/') Home
+              li.tm-nav-li
+                a.tm-nav-link(href='about') About
+              li.tm-nav-li
+                a.tm-nav-link.active(href='contact') Contact
+  main
+    header.row.tm-welcome-section
+      h2.col-12.text-center.tm-section-title Contact Us
+      p.col-12.text-center
+        | We are open everyday from 7.30am-5.30pm mon-fri and 8am-6pm sat-sun. We don't take bookings but we have tables available inside and outside for walk.
+    .tm-container-inner-2.tm-contact-section
+      .row
+        .col-md-6
+          form.tm-contact-form(action='/add' method='POST')
+            .form-group
+              input.form-control(type='text' id='name' name='name' placeholder='Name' required='')
+            .form-group
+              input.form-control(type='email' id='email' name='email' placeholder='Email' required='')
+            .form-group
+              textarea.form-control(rows='5' id='message' type='text' name='message' placeholder='Message' required='')
+            .form-group.tm-d-flex
+              button.tm-btn.tm-btn-success.tm-btn-right(type='submit')
+                | Send
+        .col-md-6
+          .tm-address-box
+            h4.tm-info-title.tm-text-success Our Address
+            address
+              | BeCafé, 
+              p 265 Yorkland Blvd #400,
+              p North York, ON M2J 1S5
+            a.tm-contact-link(href='tel:433-567-2343')
+              i.fas.fa-phone.tm-contact-icon
+              | 433-567-2343
+            a.tm-contact-link(href='mailto:contact@becafe.co')
+              i.fas.fa-envelope.tm-contact-icon
+              | contact@becafe.co
+            .tm-contact-social
+              a.tm-social-link(href='#')
+                i.fab.fa-facebook.tm-social-icon
+              a.tm-social-link(href='#')
+                i.fab.fa-twitter.tm-social-icon
+              a.tm-social-link(href='#')
+                i.fab.fa-instagram.tm-social-icon
+  footer.tm-footer.text-center
+    p
+      | Copyright &copy; 2023 BeCafé 
+script(src='js/jquery.min.js')
+script(src='js/parallax.min.js')
