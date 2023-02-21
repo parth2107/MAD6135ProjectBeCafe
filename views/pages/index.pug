@@ -36,16 +36,16 @@ head
       nav
         ul
           li.tm-paging-item
-            a.tm-paging-link.active(href='#') Pizza
+            a.tm-paging-link(href='#') Pizza
           li.tm-paging-item
-            a.tm-paging-link(href='#') Salad
+            a.tm-paging-link.active(href='#') Salad
           li.tm-paging-item
             a.tm-paging-link(href='#') Noodle
           
     // Gallery
     .row.tm-gallery
       // gallery page 1
-      #tm-gallery-page-pizza.tm-gallery-page
+      #tm-gallery-page-pizza.tm-gallery-page.hidden
         article.col-lg-3.col-md-4.col-sm-6.col-12.tm-gallery-item
           figure
             img.img-fluid.tm-gallery-img(src='img/gallery/Deluxe Handmade Pan Pizza.png' alt='Image')
@@ -104,7 +104,7 @@ head
               p.tm-gallery-price $15
       // gallery page 1
       // gallery page 2
-      #tm-gallery-page-salad.tm-gallery-page.hidden
+      #tm-gallery-page-salad.tm-gallery-page
         article.col-lg-3.col-md-4.col-sm-6.col-12.tm-gallery-item
           figure
             img.img-fluid.tm-gallery-img(src='img/gallery/04.jpg' alt='Image')
